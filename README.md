@@ -1,5 +1,5 @@
 # Line-Following-Robot
-I created a line following robot using Arduino. I programmed it in C++.
+I created a line following robot using Arduino. I programmed it in C++. The robot uses 2 QTI Sensors to detect the line and sends a signal to the Arduino and then to the motors to move the robot accordingly. 
 
 Here is the link to the steps of building this robot:
 [Final Line Chaser.pdf](https://github.com/HarguntasBenipal/Line-Following-Robot/files/10494441/Final.Line.Chaser.pdf)
