@@ -26,7 +26,7 @@ void loop() {
   delay(5);
   
   // if both sensors are 0, Left motor will turn forward and Right motor will turn forward:
-  if (digitalRead(Leftsensor) == LOW &amp;&amp; digitalRead(Rightsensor) == LOW) {
+  if (digitalRead(Leftsensor) == LOW && digitalRead(Rightsensor) == LOW) {
     digitalWrite(LeftmotorPin1, LOW); // set leg 1 of the H-bridge low
     digitalWrite(LeftmotorPin2, HIGH); // set leg 2 of the H-bridge high
     digitalWrite(RightmotorPin3, LOW); // set leg 1 of the H-bridge low
@@ -34,7 +34,7 @@ void loop() {
   }
   
   // if Left sensor is 1 and Right sensor is 0, Left motor will turn forward and Right motor will stop:
-  else if (digitalRead(Leftsensor) == HIGH &amp;&amp; digitalRead(Rightsensor) == LOW){
+  else if (digitalRead(Leftsensor) == HIGH && digitalRead(Rightsensor) == LOW){
     digitalWrite(LeftmotorPin1, LOW); // set leg 1 of the H-bridge low
     digitalWrite(LeftmotorPin2, HIGH); // set leg 2 of the H-bridge low
     digitalWrite(RightmotorPin3, LOW); // set leg 1 of the H-bridge low
@@ -43,7 +43,7 @@ void loop() {
   }
   
   // if Left sensor is 0 and Right sensor is 1, Left motor will stop and Right motor will turn forward:
-  else if (digitalRead(Leftsensor) == LOW &amp;&amp; digitalRead(Rightsensor) == HIGH){
+  else if (digitalRead(Leftsensor) == LOW && digitalRead(Rightsensor) == HIGH){
     digitalWrite(LeftmotorPin1, LOW); // set leg 1 of the H-bridge low
     digitalWrite(LeftmotorPin2, LOW); // set leg 2 of the H-bridge low
     digitalWrite(RightmotorPin3, LOW); // set leg 1 of the H-bridge low
@@ -52,7 +52,7 @@ void loop() {
   }
   
   // if Left sensor is 1 and Right sensor is 1, the motors will stop:
-  else if (digitalRead(Leftsensor) == HIGH &amp;&amp; digitalRead(Rightsensor) == HIGH){
+  else if (digitalRead(Leftsensor) == HIGH && digitalRead(Rightsensor) == HIGH){
     digitalWrite(LeftmotorPin1, LOW); // set leg 1 of the H-bridge low
     digitalWrite(LeftmotorPin2, LOW); // set leg 2 of the H-bridge low
     digitalWrite(RightmotorPin3, LOW); // set leg 1 of the H-bridge low
